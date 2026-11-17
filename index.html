@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0d7f91" />
+  <title>轻燃 · 校园 AI 膳食私教</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain"></div><div class="orb orb-one"></div><div class="orb orb-two"></div>
+  <section class="splash" id="splash" aria-label="轻燃启动页">
+    <div class="splash-ring"></div><div class="splash-logo">Q</div>
+    <div class="splash-name"><i>LIGHT</i> 轻燃</div><p>大学生 AI 膳食私教</p>
+  </section>
+  <main class="app" id="app">
+    <aside class="side-nav">
+      <div class="brand"><div class="brand-mark">Q</div><div><strong>轻燃</strong><span>LIGHT FUEL</span></div></div>
+      <nav>
+        <button class="nav-item active" data-page="home"><b>⌂</b><span>今日</span></button>
+        <button class="nav-item" data-page="coach"><b>◌</b><span>AI 私教</span></button>
+        <button class="nav-item" data-page="meal"><b>◒</b><span>轻食方案</span></button>
+        <button class="nav-item" data-page="workout"><b>◈</b><span>宿舍训练</span></button>
+        <button class="nav-item" data-page="data"><b>⌁</b><span>成长数据</span></button>
+      </nav>
+      <div class="side-bottom"><div class="streak">✦<span>已连续坚持<br><strong>12 天</strong></span></div><button class="avatar" aria-label="打开个人中心">林</button></div>
+    </aside>
+    <section class="content">
+      <header><div><p class="eyebrow" id="header-date">MON · 11.17</p><h1 id="page-title">早上好，林同学 <span>✦</span></h1></div><div class="header-tools"><button class="bell" aria-label="提醒">♧<i></i></button><div class="weather">21° <span>☀</span></div></div></header>
+
+      <div class="page active" id="home">
+        <section class="hero panel"><div class="hero-copy"><p class="kicker">YOUR DAILY RHYTHM</p><h2>今天，也和身体<br>站在同一边。</h2><p>课表满满的一天，我们把目标调成「稳稳变好」：午餐吃够蛋白质，晚间完成 12 分钟舒展即可。</p><button class="primary" data-jump="coach">和小燃聊聊 <span>→</span></button></div><div class="hero-art"><div class="sun"></div><div class="plant p1">✾</div><div class="plant p2">✿</div><div class="coach-figure"><div class="head">◡</div><div class="body"></div></div><div class="bubble">今天状态不错！<b>86</b><small>活力指数</small></div></div></section>
+        <div class="section-head"><div><p class="kicker">THE LITTLE THINGS</p><h3>今日轻任务</h3></div><span class="muted">完成 2 / 4</span></div>
+        <section class="task-grid">
+          <button class="task done"><span class="task-icon mint">☕</span><span><b>喝一杯温水</b><small>已完成 · 08:12</small></span><i>✓</i></button>
+          <button class="task" data-jump="meal"><span class="task-icon orange">◒</span><span><b>记录午餐搭配</b><small>推荐：食堂 A 区</small></span><i>＋</i></button>
+          <button class="task" data-jump="workout"><span class="task-icon lilac">◈</span><span><b>12 分钟舒展</b><small>20:30 · 宿舍低噪</small></span><i>→</i></button>
+          <button class="task"><span class="task-icon blue">☾</span><span><b>睡前复盘</b><small>21:30 · 1 分钟</small></span><i>＋</i></button>
+        </section>
+        <div class="section-head compact"><div><p class="kicker">WEEKLY PULSE</p><h3>这周的你</h3></div><button class="text-btn" data-jump="data">查看报告 →</button></div>
+        <section class="metrics"><article class="metric panel"><p>饮食均衡度</p><strong>82<span>%</span></strong><div class="bar"><i style="width:82%"></i></div><small>比上周 <em>+ 8%</em></small></article><article class="metric panel"><p>运动完成率</p><strong>4<span>/5</span></strong><div class="dots"><i></i><i></i><i></i><i></i><i class="off"></i><i class="off"></i><i class="off"></i></div><small>已经很棒啦，周末见！</small></article><article class="metric panel glow"><p>温柔提示</p><strong>别空腹<br>上课</strong><small>一颗鸡蛋 + 一盒奶，<br>就是够好的早餐。</small></article></section>
+      </div>
+
+      <div class="page" id="coach"><section class="coach-layout"><div class="coach-card panel"><p class="kicker">YOUR COMPANION</p><div class="coach-orbit"><div class="orbit"></div><div class="coach-face">◡</div><div class="status-dot"></div></div><h2>小燃 <span>在线陪伴中</span></h2><p>你的校园健康搭子。温柔提醒，不制造焦虑。</p><div class="voice-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><button class="voice-btn" id="voice-btn">▷ 听小燃说话</button><div class="coach-note">今日已陪伴 <b>03:18</b></div></div><div class="chat panel"><div class="chat-head"><div><b>和小燃聊聊</b><small>基于你的课表与今日记录</small></div><button id="clear-chat">清空</button></div><div class="messages" id="messages"><div class="msg ai"><span>燃</span><p>早上好呀，林同学！你今天 10:10 有课，先别急着想减多少。午餐我帮你留了一个高蛋白搭配，想看看吗？</p></div><div class="quick-asks"><button>午餐怎么吃？</button><button>我今天不想练</button><button>晚睡如何调整？</button></div></div><form class="composer" id="chat-form"><input id="chat-input" autocomplete="off" placeholder="问问小燃，例如：食堂吃什么？" /><button aria-label="发送">↑</button></form></div></section></div>
+
+      <div class="page" id="meal"><div class="meal-top"><div><p class="kicker">CAMPUS CAFETERIA</p><h2>不用饿肚子的<br><em>食堂减脂餐</em></h2></div><div class="balance"><span>今日均衡度</span><b>82<small>分</small></b><i>↑ 8</i></div></div><section class="nutrition panel"><div><p>三餐营养配比</p><div class="macro"><span class="protein">蛋白质 29%</span><span class="carb">优质碳水 42%</span><span class="veg">蔬果纤维 29%</span></div></div><div class="ring"><b>1,486</b><span>建议能量 kcal</span></div></section><div class="meal-tabs"><button class="active">午餐 · 推荐</button><button>早餐</button><button>晚餐</button></div><section class="food-grid"><article class="food-card panel"><div class="food-img tofu">◒</div><div class="food-info"><span class="tag">优质蛋白</span><h3>番茄鸡蛋 + 卤鸡腿</h3><p>补足蛋白，少油不寡淡</p><div><b>≈ 328 kcal</b><button class="add-food">＋</button></div></div></article><article class="food-card panel"><div class="food-img grain">◔</div><div class="food-info"><span class="tag yellow">主食刚刚好</span><h3>半份杂粮饭</h3><p>有饱腹感，也有学习能量</p><div><b>≈ 145 kcal</b><button class="add-food">＋</button></div></div></article><article class="food-card panel"><div class="food-img greens">✿</div><div class="food-info"><span class="tag green">维生素加分</span><h3>清炒时蔬</h3><p>优先选择深色叶菜</p><div><b>≈ 72 kcal</b><button class="add-food">＋</button></div></div></article></section><section class="swap panel"><div class="swap-icon">⇄</div><div><p class="kicker">SMART SWAP</p><h3>想吃炸鸡？不必硬忍。</h3><p>换成去皮鸡腿 + 玉米，照样满足，油脂可少约 18g。</p></div><button class="text-btn">看替换方案 →</button></section></div>
+
+      <div class="page" id="workout"><div class="workout-hero panel"><div><p class="kicker">DORM ROOM FLOW</p><h2>只要一块空地，<br>也能好好动起来。</h2><p>今晚 20:30 · 12 分钟 · 低冲击不扰室友</p><button class="primary" id="start-workout">开始跟练 <span>→</span></button></div><div class="timer-art"><div class="timer"><small>READY</small><b id="timer-number">12:00</b><span>分钟舒展</span></div></div></div><div class="section-head compact"><div><p class="kicker">TODAY'S FLOW</p><h3>温柔激活计划</h3></div><span class="pill">新手友好</span></div><section class="moves"><article class="move panel"><span>01</span><div class="move-art stretch">⌁</div><h3>猫牛式舒展</h3><p>1 分钟 · 放松久坐腰背</p></article><article class="move panel"><span>02</span><div class="move-art squat">⌃</div><h3>靠墙静蹲</h3><p>3 组 × 30 秒 · 激活下肢</p></article><article class="move panel"><span>03</span><div class="move-art march">♧</div><h3>原地抬腿走</h3><p>3 分钟 · 温和提升心率</p></article><article class="move panel"><span>04</span><div class="move-art breathe">○</div><h3>睡前呼吸</h3><p>2 分钟 · 让身体慢下来</p></article></section><section class="safety"><b>✦ 运动防护</b><p>若头晕、疼痛或身体明显不适，请立即停止。训练以动作稳定与呼吸顺畅为先。</p></section></div>
+
+      <div class="page" id="data"><div class="data-hero"><div><p class="kicker">GROW WITH KINDNESS</p><h2>身体在悄悄<br>回应你的坚持。</h2></div><div class="week-switch"><button>‹</button><span>11.11 – 11.17</span><button>›</button></div></div><section class="chart-card panel"><div class="chart-head"><div><p>体重趋势 <span>kg</span></p><h2>56.8 <em>↓ 0.6</em></h2></div><button class="selector">近 7 天⌄</button></div><div class="chart"><div class="chart-grid"><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 680 170" preserveAspectRatio="none" aria-label="体重趋势图"><defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#42a9b4" stop-opacity=".35"/><stop offset="1" stop-color="#42a9b4" stop-opacity="0"/></linearGradient></defs><path d="M0 35 C70 25,95 54,150 48 S230 85,290 68 S360 100,410 83 S480 127,530 100 S620 130,680 112 V170 H0Z" fill="url(#area)"/><path d="M0 35 C70 25,95 54,150 48 S230 85,290 68 S360 100,410 83 S480 127,530 100 S620 130,680 112" fill="none" stroke="#138797" stroke-width="4" stroke-linecap="round"/></svg><div class="chart-days"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div></div></section><section class="data-grid"><article class="score panel"><p>膳食平衡</p><div class="score-ring"><b>82</b></div><small>蛋白质摄入更稳定了</small></article><article class="score panel"><p>本周活动</p><strong>142<small>min</small></strong><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>比上周多 24 分钟</small></article><article class="reflection panel"><span>✦</span><div><p>小燃的周总结</p><h3>你没有追求完美，<br>但做到了持续。</h3><button class="text-btn" data-jump="coach">听听小燃怎么说 →</button></div></article></section></div>
+    </section>
+  </main>
+  <div class="toast" id="toast">已记录，今天的你又靠近目标一点 ✦</div>
+  <script src="app.js"></script>
+</body></html>
+
